@@ -1,8 +1,24 @@
-const total = 100;
-const ordered = 7270;
+// const total = 100;
+// const ordered = 7270;
 
+// if (total > ordered) {
+//     console.log('Заказ оформлен, с вами свяжется менеджер');
+// } else  {
+//     console.log('На складе недостаточно товаров!');
+// }
+
+
+const invoice = 100; 
+const stock = 100;
+
+// Write code under this line
+let message;
+
+//console.log(message);
 if (total > ordered) {
-    console.log('Заказ оформлен, с вами свяжется менеджер');
+  	message = `Заказ оформлен, с вами свяжется менеджер`
+    console.log(message);
 } else  {
-    console.log('На складе недостаточно товаров!');
+  	message =`На складе недостаточно товаров!`
+    console.log(message);
 }
