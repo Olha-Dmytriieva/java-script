@@ -1,18 +1,23 @@
 const findBestEmployee = function (employees) {
-
+  
+  
   let colleague = 0;
-    // console.log(employees)
-    const devs = Object.keys(employees)
-    console.log((devs))
+  let messageKey = ` `;
+  const devs = Object.keys(employees)
+  console.log((devs))
 
+if (Object.keys(employees).length === 0) 
+      { return messageKey = '' }
+else{
     for(const num of devs){
       
-      // console.log(`${num}:${employees[num]}`)
       if (employees[num] > colleague){
         colleague = employees[num]
       }
+    }   
      
 } 
+return Object.keys(employees).find(key => employees[key] === colleague);
 }
 
   
@@ -26,7 +31,7 @@ const findBestEmployee = function (employees) {
     helen: 1,
     lorence: 99,
   }; 
-  findBestEmployee(developers);
+  // findBestEmployee(developers);
   // 'lorence'
   
   const supports = {
